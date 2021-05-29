@@ -1,0 +1,36 @@
+# Hello World API
+
+To get started with your first API, you can either copy this or write this on your own to understand steps.
+
+This example explains how to setup a basic endpoint and send simple text in return on every request.
+
+#### Points to note
+- The endpoint made is a GET Request which you learnt in [Types of HTTP Requests](/introduction/requests)
+- We're only sending simple text without any formatting or a json object in this API
+
+
+#### How to setup your node app
+
+1. Open a terminal/Command prompt window in your project folder. If you're using VSCode just press ` CTRL + ~ `
+2. Run `npm init` and setup the required fields to setup your package.json.
+3. Replace `"test":"echo \"Error: no test specified\" && exit 1"` with `"start":"node index.js"` to setup your start script
+4. Run `npm install express` to install express in your node modules.
+5. Make a file named `index.js` and paste the following code into it or write you own it you want to!
+
+```js
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
+```
+
+6. Run `npm start` in your terminal.
+7. Go to [http://localhost:3000/](http://localhost:3000/) to view your first endpoint
+

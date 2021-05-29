@@ -1,6 +1,6 @@
 export default {
   repository: 'https://github.com/arhammusheer/API-course-docs',
-  titleSuffix: ' – Nextra',
+  titleSuffix: ' – Codemian',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">Codemian</span>
